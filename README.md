@@ -1,5 +1,5 @@
 # EUserv_extend
-使用Github Action自动续期EUserv免费IPv6 VPS脚本
+使用Github Action自动续期EUserv免费IPv6 VPS脚本 
 
 ## 说明
 
@@ -22,12 +22,12 @@ PASSWORD: 第一个账户密码 第二个账户密码
 
 3、最后在你这个 Fork 的仓库内修改一下```.github/workflows/action.yml ```文件（这个本项目的Workflow的配置文件）。请见这一段落：
 
-```
+``
 schedule:
   - cron: '50 1 * * 0,3'
 ```
 
-这一Cron表达式规定了本脚本的执行时间，即默认每周日、每周三1:50 UTC执行脚本。请修改这一文件否则脚本可能无法正常工作。
+这 一Cron表达式规定了本脚本的执行时间，即默认每周日、每周三1:50 UTC执行脚本。请修改这一文件否则脚本可能无法正常工作。
 
 如果你在Github上编辑此文件，Github会为你提供即时的注释，即类似“Runs at 01:50 UTC on Sun and Wed”，请根据这一注释自行设置脚本执行时间。
 
@@ -47,6 +47,6 @@ schedule:
 
 ~~2、由于Github Workflow的限制，你可能需要每两个月重新启动一下，方法是随便改下本README.md~~（本项目目前每月会自动向仓库提交commit，Workflow应该不会被自动暂停了）
 
-## 参考（及本文档）
+## 参考（及本文档）好
 
 hostloc-auto-get-points: https://github.com/inkuang/hostloc-auto-get-points  MIT License
